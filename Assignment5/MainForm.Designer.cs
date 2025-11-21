@@ -74,18 +74,21 @@
             this.personDataGridView.AllowUserToAddRows = false;
             this.personDataGridView.AllowUserToDeleteRows = false;
             this.personDataGridView.AutoGenerateColumns = false;
+            this.personDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.personDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.personDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.personDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.personDataGridView.DataSource = this.personBindingSource;
-            this.personDataGridView.Location = new System.Drawing.Point(233, 104);
+            this.personDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.personDataGridView.Location = new System.Drawing.Point(0, 0);
             this.personDataGridView.Name = "personDataGridView";
             this.personDataGridView.ReadOnly = true;
             this.personDataGridView.RowHeadersWidth = 62;
             this.personDataGridView.RowTemplate.Height = 28;
-            this.personDataGridView.Size = new System.Drawing.Size(511, 220);
+            this.personDataGridView.Size = new System.Drawing.Size(1019, 309);
             this.personDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -105,7 +108,7 @@
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 150;
+            this.dataGridViewTextBoxColumn2.Width = 87;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -114,12 +117,12 @@
             this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 150;
+            this.dataGridViewTextBoxColumn3.Width = 91;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(111, 384);
+            this.lblName.Location = new System.Drawing.Point(71, 402);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(51, 20);
             this.lblName.TabIndex = 2;
@@ -128,7 +131,7 @@
             // txtName
             // 
             this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personBindingSource, "Name", true));
-            this.txtName.Location = new System.Drawing.Point(115, 407);
+            this.txtName.Location = new System.Drawing.Point(75, 432);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 26);
             this.txtName.TabIndex = 3;
@@ -136,7 +139,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(398, 383);
+            this.lblPhone.Location = new System.Drawing.Point(250, 402);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(55, 20);
             this.lblPhone.TabIndex = 4;
@@ -145,14 +148,14 @@
             // txtPhone
             // 
             this.txtPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personBindingSource, "Phone", true));
-            this.txtPhone.Location = new System.Drawing.Point(402, 407);
+            this.txtPhone.Location = new System.Drawing.Point(254, 432);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(100, 26);
             this.txtPhone.TabIndex = 5;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(648, 377);
+            this.btnSave.Location = new System.Drawing.Point(465, 402);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 56);
             this.btnSave.TabIndex = 6;
@@ -162,7 +165,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(793, 384);
+            this.btnDelete.Location = new System.Drawing.Point(641, 402);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(96, 56);
             this.btnDelete.TabIndex = 7;
@@ -172,9 +175,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(754, 493);
+            this.btnAdd.Location = new System.Drawing.Point(811, 402);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(96, 56);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = true;
