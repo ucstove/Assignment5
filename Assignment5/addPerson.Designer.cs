@@ -39,7 +39,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(134, 109);
+            this.lblName.Location = new System.Drawing.Point(70, 71);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(51, 20);
             this.lblName.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(138, 146);
+            this.txtName.Location = new System.Drawing.Point(74, 103);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 26);
             this.txtName.TabIndex = 1;
@@ -55,7 +55,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(498, 109);
+            this.lblPhone.Location = new System.Drawing.Point(298, 71);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(55, 20);
             this.lblPhone.TabIndex = 2;
@@ -63,16 +63,16 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(502, 145);
+            this.txtPhone.Location = new System.Drawing.Point(302, 103);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(100, 26);
             this.txtPhone.TabIndex = 3;
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(193, 290);
+            this.btnOk.Location = new System.Drawing.Point(105, 205);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.Size = new System.Drawing.Size(101, 57);
             this.btnOk.TabIndex = 4;
             this.btnOk.Text = "&Ok";
             this.btnOk.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(451, 290);
+            this.btnClose.Location = new System.Drawing.Point(261, 205);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(101, 57);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -92,13 +92,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(477, 357);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(499, 413);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(499, 413);
             this.Name = "addPersonForm";
             this.Text = "Add Person";
             this.Load += new System.EventHandler(this.addPersonForm_Load);
